@@ -65,6 +65,12 @@ You can generate a standalone Windows executable for either script using [PyInst
 
    The executable will be created in the `dist` folder.
 
+### Download the Windows Executable
+
+A pre-built Windows `.exe` for the password generator is available on the [GitHub Releases page](https://github.com/your-username/your-repo/releases). Download the latest `random_password_generator.exe` from the Releases section—no Python installation required.
+
+> **Note:** If you want to build your own executable, see the instructions above under "Windows Executable."
+
 ### Distributing the Executable
 
 To share the `.exe` file, use [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases):
