@@ -8,6 +8,7 @@ This repository contains two Python scripts that generate random word-based comb
 - Filters words to the 10,000 most common English words (auto-downloads if needed)
 - Automatically downloads required NLTK data if missing
 - Batch generation and interactive prompts
+- **Windows executable generation supported (see below)**
 
 ## Scripts
 
@@ -45,6 +46,35 @@ python random_password_generator.py --capitalize --symbol ! --symbol-pos start -
 - `--count N` : Number of combinations per batch (default: 20)
 - `--min N` : Minimum number value (default: 0)
 - `--max N` : Maximum number value (default: 9999)
+
+## Windows Executable
+
+You can generate a standalone Windows executable for either script using [PyInstaller](https://pyinstaller.org/):
+
+1. Install PyInstaller:
+
+   ```sh
+   pip install pyinstaller
+   ```
+
+2. Build the executable (example for password generator):
+
+   ```sh
+   pyinstaller --onefile random_password_generator.py
+   ```
+
+   The executable will be created in the `dist` folder.
+
+### Distributing the Executable
+
+To share the `.exe` file, use [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases):
+
+1. Go to your repository on GitHub.
+2. Click on "Releases" > "Draft a new release".
+3. Upload the `.exe` file (from the `dist` folder) as a release asset.
+4. Publish the release. Users can then download the executable directly from the Releases page.
+
+> **Note:** Do not commit the `.exe` file to your repository. Use Releases for binary distribution.
 
 ## Requirements
 
