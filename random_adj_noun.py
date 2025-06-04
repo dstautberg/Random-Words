@@ -35,10 +35,13 @@ if __name__ == "__main__":
     ensure_nltk_data()
     adjectives = get_adjectives()
     nouns = get_nouns()
-    print("Random Adjective-Noun Pair Generator (NLTK)")
+    print("Random Adjective-Noun Pair Generator (NLTK)\n")
     while True:
-        pair = generate_pair(adjectives, nouns)
-        print(pair)
-        cont = input("Generate another? (y/n): ").strip().lower()
-        if cont != 'y':
+        print("-" * 59)
+        for _ in range(20):
+            pair = generate_pair(adjectives, nouns)
+            print(pair)
+        print("-" * 59)
+        cont = input("Press [enter] to generate another 10, or enter 'q' to quit: ").strip().lower()
+        if cont == 'q':
             break
