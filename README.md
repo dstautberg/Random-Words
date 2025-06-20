@@ -5,7 +5,7 @@ This repository contains two Python scripts that generate random word-based comb
 ## Features
 
 - Uses open source NLTK WordNet database for word selection
-- Filters words to the 10,000 most common English words (auto-downloads if needed)
+- Filters down to the 10,000 most common English words 
 - Automatically downloads required NLTK data if missing
 - Batch generation and interactive prompts
 - **Windows executable generation supported (see below)**
